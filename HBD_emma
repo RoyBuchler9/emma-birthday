@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #4CAF50;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+
+    #cake {
+      width: 150px;
+      position: relative;
+    }
+
+    #candle {
+      width: 20px;
+      height: 100px;
+      background-color: #ffcc00;
+      position: absolute;
+      bottom: 0;
+      left: 65px;
+      z-index: 1;
+    }
+
+    #flame {
+      width: 40px;
+      height: 40px;
+      background-color: #ffcc00;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 100px;
+      left: 65px;
+      animation: flame 1s infinite alternate-reverse;
+    }
+
+    @keyframes flame {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-10px);
+      }
+    }
+
+    #message {
+      font-size: 24px;
+      color: #fff;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="cake">
+    <div id="candle"></div>
+    <div id="flame"></div>
+  </div>
+  <div id="message">🎉 Happy Birthday! 🎂</div>
+
+  <script>
+    // JavaScript logic can be added here, if needed
+  </script>
+</body>
+</html>
